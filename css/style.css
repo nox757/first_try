@@ -1,0 +1,376 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    margin: 0px;
+    color: #fff;
+    background: green;
+    padding: 0px;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 730px;
+    min-height: 730px;
+    background: url(../img/header.png) no-repeat 100% 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header .menu {
+    width: 70%;
+    min-height: 75px;
+   /* margin: auto;
+    padding-top: 30px;*/
+    margin-top: 30px; 
+}
+.header .menu-list {
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header a.menu-link {
+    text-decoration: none;
+    font-size: 2.0rem;
+    text-transform: capitalize;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+.header li:last-child a{
+    text-decoration: none;
+    font-size: 2.0rem;
+    text-transform: capitalize;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    margin-left: 75px;
+}
+
+.header a.menu-link:hover {
+    background: rgb(124, 116, 116);
+  
+   border-radius: 5px;
+    color: rgb(80, 58, 58);
+    
+}
+
+.header .menu-list li:nth-child(-n+3) .menu-link:after {
+    content: "\25BC";
+    margin-left: 10px;
+    color: white;
+    font-size: 1.4rem;
+
+
+}
+.header .menu-list li  a.menu-link:hover:after{
+
+    color: rgb(80, 58, 58);
+}
+
+
+
+.header-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo .logo-text {
+    text-align: center;
+    font-size: 1.4rem;
+}
+.header-logo .logo-text h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem
+}
+.header-slider {
+    min-height: 200px;
+    margin-bottom: 30px; 
+    background: grey;
+}
+
+
+.main {
+    width: 70%;
+    border: 1px solid #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    color: #000;
+    background: white;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  center;
+    margin-bottom: 70px;
+    padding-top: 50px; 
+    width: 100%;
+}
+
+.section h1, .contacts h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.section h1:after, .contacts h1:after {
+    content: "";
+    color: #000;
+    display: block;
+    border: 0.5px solid #000;
+    height: 0px;
+    width: 80px;
+    margin: 15px auto 25px;
+    
+}
+
+.section>span {
+    
+    margin-bottom: 50px;
+    font-size: 1.4rem;
+    width: 90%;
+}
+
+
+.section .section-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 80%;
+    
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-cards .section-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(119, 105, 105);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    width: 170px;
+    height: 190px;
+    padding-top: 50px;
+ 
+}
+.section-cards .section-card span.caption {
+    margin-bottom: auto;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.section-cards .section-card.card-adventage {
+    height: auto;
+    border: none;
+}
+.section-cards .section-card.card-adventage p{
+    font-size: 1.4rem;
+    text-transform: none;
+    margin-top: 30px;
+}
+
+.section.s-adventages .section-cards .card-adventage {
+    position: relative;
+}
+
+.section.s-adventages .section-cards .card-adventage:first-child:before {
+    position: absolute;
+    content: "";
+    background: url("../img/ext/man.png") no-repeat;
+    top: -80px;
+    left: -428px;
+ 
+    height: 440px;
+    width: 450px;
+}
+
+.section.s-adventages .man-img {
+    display: none;
+    
+}
+
+
+.section.s-about{
+  margin-bottom: 40px;
+
+}
+
+.section.s-about p{
+    line-height: 2.2rem;
+    font-size: 1.4rem;
+    width: 90%;
+    margin: 0;
+
+}
+
+
+.main .section.s-partners .partner-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: space-around;
+}
+
+.partner-cards .partner-card {
+     max-width: 128px;
+     
+      
+}
+
+.partner-cards .partner-card:last-child {
+    margin-right: 0px;     
+}
+.divide-line{
+    width: 100% !important;
+    margin-bottom: 40px;
+}
+
+
+
+.partner-cards .partner-card  .partner-img{
+   
+    height: 128px;
+    border: 1px solid #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.partner-cards .partner-card  .partner-img. img{
+    margin: auto;
+}
+
+.partner-cards .partner-card  .partner-title{
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+
+.map-section {
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+    background: rgb(230, 182, 78);
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    background: rgb(230, 182, 78);
+   
+    color: rgb(122, 43, 43);
+    padding-top: 30px;
+}
+
+.contacts .contact-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+
+.contacts .contact-cards {
+    width: 80%;
+    padding-top: 40px ;
+}
+
+.contact-cards .contact-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+    flex: 1;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+}
+
+.contact-cards .contact-card .icon {
+    margin-bottom: 30px;
+}
+
+
+.footer {
+    width: 100%;
+    color: white;
+    background: rgb(82, 62, 62);
+   
+}
+
+.footer .l-footer {
+    width: 80%; 
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: auto;
+}
+
+
+.l-footer ul.socials {
+    
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    
+}
+
+.l-footer ul.socials>li>a {
+    color: white;
+    font-size: 1.6rem;
+    display: block;
+    height: 16px;
+    width: 16px;
+    text-decoration: none;
+
+}
+
+.l-footer .copyright {
+    border: 1px solid black;
+}
+
+
+
+
+
+
