@@ -351,7 +351,8 @@ body {
     justify-content: space-around;
     margin: 0;
     padding: 0;
-    border: 1px solid black;
+   /* border: 1px solid black;*/
+    width: 20%;
     
 }
 
@@ -359,14 +360,18 @@ body {
     color: white;
     font-size: 1.6rem;
     display: block;
-    height: 16px;
-    width: 16px;
+    height: 32px;
+    width: 32px;
     text-decoration: none;
+    
+    
 
 }
 
 .l-footer .copyright {
-    border: 1px solid black;
+   /* border: 1px solid black;*/
+    flex: 6;
+    padding-left: 20%;
 }
 
 
