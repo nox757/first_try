@@ -121,10 +121,16 @@ body {
     padding: 0;
     font-size: 1.8rem
 }
+
+
 .header-slider {
     min-height: 200px;
     margin-bottom: 30px; 
-    background: grey;
+    background: green;
+}
+svg:hover {
+    background: white;   
+    
 }
 
 
@@ -389,6 +395,7 @@ body {
     height: 32px;
     width: 32px;
     text-decoration: none;
+    line-height: 32px;
     
     
 
@@ -398,7 +405,19 @@ body {
    /* border: 1px solid black;*/
     flex: 6;
     padding-left: 20%;
+    height: 32px;
+   
 }
+.l-footer .copyright span{
+    line-height: 32px;
+    
+ }
+.l-footer .copyright a{
+    color: #c7c5c2;
+    text-decoration: none;
+}
+ 
+
 
 
 

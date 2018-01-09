@@ -11,4 +11,33 @@
     .m-menu-link {
         display: block;
     }
+   
+}
+
+@media screen and (max-width:1023px) {
+
+    body {
+        margin-top:40px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .visible-lg {
+        display: none;
+    }
+    .m-menu-link {
+        display: block;
+    }
+    .footer .l-footer {
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 10px;
+
+    }
+    .footer .copyright {
+        padding: 0;
+        flex: none;
+    }
+       
+    
+   
 }
