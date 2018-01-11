@@ -1,57 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="windows-1251"?>
 <?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2russianfull.xsl"?>
 <?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?>
-<rss version="2.0">
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
     <channel>
-        <title>Дайджест СМИ</title>
+        <title>Новости по системам безопасности</title>
         <link>http://www.secnews.ru</link>
-        <description>Дайджест новостей электронных СМИ в контексте систем безопасности &amp;#40;системы видеонаблюдения, системы контроля доступа и т.п.&amp;#41;...</description>
-        <lastBuildDate>Wed, 10 Jan 2018 13:27:48 +0300</lastBuildDate>
+        <description>Российские новости по техническим средствам и системам безопасности (видеонаблюдение, контроль доступа, охранно-пожарная сигнализация...).</description>
+        <lastBuildDate>Thu, 11 Jan 2018 12:26:21 +0300</lastBuildDate>
         <ttl>0</ttl>
-        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/secnews/digest" />
-        <feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="secnews/digest" />
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/security_news_ru" />
+        <feedburner:info uri="security_news_ru" />
         <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
-        <feedburner:emailServiceId xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">secnews/digest</feedburner:emailServiceId>
-        <feedburner:feedburnerHostname xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">https://feedburner.google.com</feedburner:feedburnerHostname>
-        <feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="https://add.my.yahoo.com/rss?url=http%3A%2F%2Ffeeds.feedburner.com%2Fsecnews%2Fdigest" src="http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo4.gif">Subscribe with My Yahoo!</feedburner:feedFlare>
-        <feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.bloglines.com/sub/http://feeds.feedburner.com/secnews/digest" src="http://www.bloglines.com/images/sub_modern11.gif">Subscribe with Bloglines</feedburner:feedFlare>
-        <feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Ffeeds.feedburner.com%2Fsecnews%2Fdigest" src="//www.netvibes.com/img/add2netvibes.gif">Subscribe with Netvibes</feedburner:feedFlare>
-        <feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.pageflakes.com/subscribe.aspx?url=http%3A%2F%2Ffeeds.feedburner.com%2Fsecnews%2Fdigest" src="http://www.pageflakes.com/ImageFile.ashx?instanceId=Static_4&amp;fileName=ATP_blu_91x17.gif">Subscribe with Pageflakes</feedburner:feedFlare>
-        <feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="https://mail.yandex.ru/my/#lenta/feed/http://feeds.feedburner.com/secnews/digest" src="//img.yandex.net/i/addfeed.gif">Читать в Яндекс.Подписках</feedburner:feedFlare>
-        <feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.thefreedictionary.com/_/hp/AddRSS.aspx?http%3A%2F%2Ffeeds.feedburner.com%2Fsecnews%2Fdigest" src="http://img.tfd.com/hp/addToTheFreeDictionary.gif">Subscribe with The Free Dictionary</feedburner:feedFlare>
-        <feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.bitty.com/manual/?contenttype=rssfeed&amp;contentvalue=http%3A%2F%2Ffeeds.feedburner.com%2Fsecnews%2Fdigest" src="http://www.bitty.com/img/bittychicklet_91x17.gif">Subscribe with Bitty Browser</feedburner:feedFlare>
-        <feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.podcastready.com/oneclick_bookmark.php?url=http%3A%2F%2Ffeeds.feedburner.com%2Fsecnews%2Fdigest" src="http://www.podcastready.com/images/podcastready_button.gif">Subscribe with Podcast Ready</feedburner:feedFlare>
-        <feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.dailyrotation.com/index.php?feed=http%3A%2F%2Ffeeds.feedburner.com%2Fsecnews%2Fdigest" src="http://www.dailyrotation.com/rss-dr2.gif">Subscribe with Daily Rotation</feedburner:feedFlare>
+        <feedburner:emailServiceId>security_news_ru</feedburner:emailServiceId>
+        <feedburner:feedburnerHostname>https://feedburner.google.com</feedburner:feedburnerHostname>
+        <feedburner:feedFlare href="https://add.my.yahoo.com/rss?url=http%3A%2F%2Ffeeds.feedburner.com%2Fsecurity_news_ru" src="http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo4.gif">Subscribe with My Yahoo!</feedburner:feedFlare>
+        <feedburner:feedFlare href="http://www.bloglines.com/sub/http://feeds.feedburner.com/security_news_ru" src="http://www.bloglines.com/images/sub_modern11.gif">Subscribe with Bloglines</feedburner:feedFlare>
+        <feedburner:feedFlare href="http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Ffeeds.feedburner.com%2Fsecurity_news_ru" src="//www.netvibes.com/img/add2netvibes.gif">Subscribe with Netvibes</feedburner:feedFlare>
+        <feedburner:feedFlare href="http://www.pageflakes.com/subscribe.aspx?url=http%3A%2F%2Ffeeds.feedburner.com%2Fsecurity_news_ru" src="http://www.pageflakes.com/ImageFile.ashx?instanceId=Static_4&amp;fileName=ATP_blu_91x17.gif">Subscribe with Pageflakes</feedburner:feedFlare>
+        <feedburner:feedFlare href="https://mail.yandex.ru/my/#lenta/feed/http://feeds.feedburner.com/security_news_ru" src="//img.yandex.net/i/addfeed.gif">Читать в Яндекс.Подписках</feedburner:feedFlare>
+        <feedburner:feedFlare href="http://www.thefreedictionary.com/_/hp/AddRSS.aspx?http%3A%2F%2Ffeeds.feedburner.com%2Fsecurity_news_ru" src="http://img.tfd.com/hp/addToTheFreeDictionary.gif">Subscribe with The Free Dictionary</feedburner:feedFlare>
+        <feedburner:feedFlare href="http://www.bitty.com/manual/?contenttype=rssfeed&amp;contentvalue=http%3A%2F%2Ffeeds.feedburner.com%2Fsecurity_news_ru" src="http://www.bitty.com/img/bittychicklet_91x17.gif">Subscribe with Bitty Browser</feedburner:feedFlare>
+        <feedburner:feedFlare href="http://www.podcastready.com/oneclick_bookmark.php?url=http%3A%2F%2Ffeeds.feedburner.com%2Fsecurity_news_ru" src="http://www.podcastready.com/images/podcastready_button.gif">Subscribe with Podcast Ready</feedburner:feedFlare>
+        <feedburner:feedFlare href="http://www.dailyrotation.com/index.php?feed=http%3A%2F%2Ffeeds.feedburner.com%2Fsecurity_news_ru" src="http://www.dailyrotation.com/rss-dr2.gif">Subscribe with Daily Rotation</feedburner:feedFlare>
+        <feedburner:browserFriendly>Международные новости по техническим средствам и системам безопасности (видеонаблюдение, системы контроля доступа и пр.). Новейшие технологии, лучшие практики, опыт профессионалов. Дайджест СМИ. Исследования рынка и средств маркетинговой коммуникации, включая отраслевую прессу. Взрывное развитие технологий безопасности, новые вызовы и проблемы, рост интереса к рынку охранных технологий со стороны крупнейших игроков рынка IT -- все это залог устойчивого спроса на оперативную информацию о состоянии дел в глобальной отрасли безопасности. "Security News" -- вооруженный до зубов, надежный и проверенный в деле агент. Следите за донесениями!</feedburner:browserFriendly>
+        <item>
+            <title>Системы безопасности для самостоятельной установки угрожают доходам профессиональных инсталляторов</title>
+            <link>http://www.secnews.ru/foreign/23585.htm</link>
+            <description>Распространение систем безопасности для самостоятельной установки угрожает позициям профессиональных инсталляторов на рынке. Низкая стоимость таких систем и их простота привлекают потребителя. И хотя ставка на надёжность остаётся важнейшим фактором в безопасности, и совсем без работы инсталляторы не останутся, но часть доходов они потеряют.&lt;img src="http://feeds.feedburner.com/~r/security_news_ru/~4/p44NqHPA0Tk" height="1" width="1" alt=""/&gt;</description>
+            <enclosure url="http://www.secnews.ru/upload/iblock/868/868253fdffc6850bb97f4bec26519057.jpg" length="7270" type="image/jpeg" />
+            <pubDate>Wed, 10 Jan 2018 09:00:00 +0300</pubDate>
+        </item>
+        <item>
+            <title>Транспортный видеорегистратор Wisenet TRM-1610 в промышленном исполнении — новинка от компании Hanwha Techwin</title>
+            <link>http://www.secnews.ru/pr/23583.htm</link>
+            <description>Новый 16-канальный видеорегистратор для использования на транспорте Wisenet TRM-1610 представила компания Hanwha Techwin. Он имеет металлический корпус с надёжной защитой от вибрации, широкий диапазон рабочих температур, безвентиляторное охлаждение и встроенный коммутатор PoE. Поддерживается сжатие кодеком H.265 с использованием фирменной технологии WiseStream.&lt;img src="http://feeds.feedburner.com/~r/security_news_ru/~4/XecBo-apee8" height="1" width="1" alt=""/&gt;</description>
+            <enclosure url="http://www.secnews.ru/upload/iblock/1a5/1a519c51ec2feb9d0c18205b492b01c7.jpg" length="4980" type="image/jpeg" />
+            <pubDate>Tue, 09 Jan 2018 12:34:52 +0300</pubDate>
+        </item>
         <item>
             <title>Человека, запросившего информацию о городских камерах видеонаблюдения, отдали под суд</title>
             <link>http://www.secnews.ru/digest/23582.htm</link>
-            <description>Власти города подали в суд на борца против видеонаблюдения как проявления чрезмерной слежки, который запросил документы по имеющимся в городе камерам и хотел их обнародовать. Они хотят через суд обязать его не публиковать полученные документы. Он же, в свою очередь, намерен с помощью этого процесса заставить власти работать прозрачно.&lt;img src="http://feeds.feedburner.com/~r/secnews/digest/~4/jR2TRK7I__I" height="1" width="1" alt=""/&gt;</description>
-            <enclosure url="http://www.secnews.ru/upload/iblock/86d/86d76b69be7f55b95f1d48e297561aa3.jpg" length="4047" type="image/jpeg" width="100" height="100" />
-            <category>Безопасный город/</category>
+            <description>Власти города подали в суд на борца против видеонаблюдения как проявления чрезмерной слежки, который запросил документы по имеющимся в городе камерам и хотел их обнародовать. Они хотят через суд обязать его не публиковать полученные документы. Он же, в свою очередь, намерен с помощью этого процесса заставить власти работать прозрачно.&lt;img src="http://feeds.feedburner.com/~r/security_news_ru/~4/jR2TRK7I__I" height="1" width="1" alt=""/&gt;</description>
+            <enclosure url="http://www.secnews.ru/upload/iblock/86d/86d76b69be7f55b95f1d48e297561aa3.jpg" length="4047" type="image/jpeg" />
             <pubDate>Tue, 09 Jan 2018 12:00:00 +0300</pubDate>
-        </item>
-        <item>
-            <title>Вместо полиции частная охрана</title>
-            <link>http://www.secnews.ru/digest/23578.htm</link>
-            <description>Жители городских кварталов нанимают частные охранные компании, если перестают полагаться на помощь полиции. Сотрудники такой компании патрулируют улицы и приезжают по вызову. Однако пока неясно, насколько популярной станет эта бизнес-схема. Если несколько человек вдруг откажутся платить, то нагрузка на остальных возрастёт, и это может породить цепную реакцию.&lt;img src="http://feeds.feedburner.com/~r/secnews/digest/~4/cMB5Cs3e41E" height="1" width="1" alt=""/&gt;</description>
-            <enclosure url="http://www.secnews.ru/upload/iblock/8cc/8cc605adf121493c097b8694f9da2a08.jpg" length="3775" type="image/jpeg" width="100" height="100" />
-            <category>Безопасный город/</category>
-            <pubDate>Fri, 22 Dec 2017 09:00:00 +0300</pubDate>
-        </item>
-        <item>
-            <title>Суд постановил, что номера автомобилей, распознаваемые полицией, не являются конфиденциальной информацией</title>
-            <link>http://www.secnews.ru/digest/23555.htm</link>
-            <description>Номера автомобилей, постоянно распознаваемые полицией, не являются конфиденциальной информацией, и их, следовательно, не обязательно скрывать от общественности. Так решил Верховный суд Калифорнии. Однако для того, чтобы предоставить кому-либо такие данные, их надо сначала как-то обезличить. Как именно, придётся решать суду первой инстанции.&lt;img src="http://feeds.feedburner.com/~r/secnews/digest/~4/rfxsvzN_K_k" height="1" width="1" alt=""/&gt;</description>
-            <enclosure url="http://www.secnews.ru/upload/iblock/35f/35f3a5598aeecadba83322b0f0b9392a.jpg" length="3486" type="image/jpeg" width="100" height="100" />
-            <pubDate>Wed, 29 Nov 2017 13:40:00 +0300</pubDate>
-        </item>
-        <item>
-            <title>Жители города против использования беспилотников полицией</title>
-            <link>http://www.secnews.ru/digest/23537.htm</link>
-            <description>Всего-то два беспилотника, пролежавших у неё без дела три года, хочет использовать в работе полиция Лос-Анджелеса. Однако скептики активно против. Им видится в этом что-то военное. Полицейские клянутся, что будут применять аппараты на основании строгой процедуры, но их оппоненты возражают, что если технология будет обкатана, то правила можно потом и поменять.&lt;img src="http://feeds.feedburner.com/~r/secnews/digest/~4/GmSQoZlNJBA" height="1" width="1" alt=""/&gt;</description>
-            <enclosure url="http://www.secnews.ru/upload/iblock/5a3/5a35e52a022180bd47dbdf2e6ce887bf.jpg" length="2407" type="image/jpeg" width="100" height="100" />
-            <category>Безопасный город/</category>
-            <pubDate>Mon, 13 Nov 2017 09:00:00 +0300</pubDate>
         </item>
     </channel>
 </rss>
