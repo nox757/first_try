@@ -156,12 +156,17 @@ body {
     min-height: 200px;
     margin-bottom: 30px; 
     background: green;
-}
-svg:hover {
-    background: white;   
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
+.header-slider figure{
+    min-width: 125px;
+    background-repeat: no-repeat;
+    max-height: 125px;
+   
+}
 
 .main {
     width: 70%;
