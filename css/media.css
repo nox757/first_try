@@ -1,22 +1,26 @@
-@media screen and (max-width:1199px) {
+@media screen and (max-width:1220px) {
 
+    html {
+        font-size: 8px;
+
+    }
     body {
      margin-top:40px;
      width: 100%;
      margin: 0 auto;
     }
+
+   
+}
+
+@media screen and (max-width:1023px) {
+
     .visible-lg {
         display: none;
     }
     .m-menu-link {
         display: block;
     }
-   
-}
-
-@media screen and (max-width:1023px) {
-
-   
     .footer .l-footer {
         flex-direction: column;
         justify-content: space-around;
@@ -27,7 +31,36 @@
         padding: 0;
         flex: none;
     }
+    .main .section.s-partners .partner-cards {
+
+        width: 100%;
        
+    }  
+    .partner-cards .partner-card {
+        margin-top: 15px;
+    }
+    .contacts .contact-cards {
+        padding-top: 20px ;
+    }
     
    
 }
+
+@media screen and (max-width:900px) {
+    .section .section-cards {
+        flex-wrap: wrap;
+    }
+    .section .section-cards .section-card{
+        margin-top: 20px;
+    }
+    .contacts .contact-cards {
+        padding-top: 0px ;
+    }
+    .contact-cards .contact-card {
+        margin-top: 15px; 
+    }
+    .section.s-adventages .section-cards .card-adventage:first-child:before {
+        display: none;
+    }
+}
+

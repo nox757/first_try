@@ -15,8 +15,8 @@ body {
 }
 
 .header {
-    height: 730px;
-    min-height: 730px;
+    height: 73rem;
+    min-height: 73rem;
     background: url(../img/header.png) no-repeat 100% 100%;
     background-size: cover;
     display: flex;
@@ -331,6 +331,7 @@ svg:hover {
     
     margin-bottom: 50px;
     text-align: center;
+    flex-wrap: wrap-reverse;
     
 }
 
@@ -346,6 +347,7 @@ svg:hover {
     flex: 1;
     font-size: 1.4rem;
     line-height: 2.5rem;
+    min-width: 150px;
 }
 
 .contact-cards .contact-card .icon {
