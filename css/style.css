@@ -48,7 +48,7 @@ body {
     margin-top: 30px; 
     flex: auto;
 }
-.header .menu-wrapper .menu-list {
+.header .menu-wrapper .menu .menu-list {
     
     list-style: none;
     display: flex;
@@ -82,7 +82,36 @@ body {
     margin-left: 75px;
 }
 
-.header .menu-wrapper a.menu-link:hover {
+.header .menu-wrapper .m-menu {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background-color: #2d2419;
+    transition: 0.7s;
+    transform: translateX(-100%);
+    z-index: 10;
+
+}
+.header .menu-wrapper .m-menu__active {
+    transform: translateX(0%);
+
+}
+.header .menu-wrapper .m-menu .menu-list {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+.header .menu-wrapper .m-menu a.menu-close:hover {
+    cursor: pointer;
+    
+}
+
+.header .menu-wrapper .menu a.menu-link:hover {
     background: #a69f89;
   
    border-radius: 5px;
@@ -90,7 +119,7 @@ body {
     
 }
 
-.header .menu-wrapper .menu-list li:nth-child(-n+3) .menu-link:after {
+.header .menu-wrapper .menu .menu-list li:nth-child(-n+3) .menu-link:after, .header .menu-wrapper .m-menu .menu-list li:nth-child(n+2):nth-child(-n+4) .menu-link:after {
     content: "\25BC";
     margin-left: 10px;
     color: white;
@@ -98,7 +127,7 @@ body {
 
 
 }
-.header .menu-wrapper .menu-list li  a.menu-link:hover:after{
+.header .menu-wrapper .menu .menu-list li  a.menu-link:hover:after{
 
     color: #2d2419;
 }

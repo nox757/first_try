@@ -13,7 +13,7 @@
    
 }
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width:1025px) {
 
     .visible-lg {
         display: none;
@@ -21,6 +21,24 @@
     .m-menu-link {
         display: block;
     }
+    .header .menu-wrapper{
+        margin-top: 25px;
+
+    }
+    .header .menu-wrapper .m-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .header .menu-wrapper .m-menu .menu-close {
+        position: fixed;
+        right: 20%;
+        top: 25%;
+        font-size: 30px;
+    }
+        
+    
     .footer .l-footer {
         flex-direction: column;
         justify-content: space-around;
@@ -42,9 +60,8 @@
     .contacts .contact-cards {
         padding-top: 20px ;
     }
-    
-   
 }
+
 
 @media screen and (max-width:900px) {
     .section .section-cards {
