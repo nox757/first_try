@@ -55,30 +55,33 @@
                 <h1>Альянс Консалтин</h1>
                 <span>общество с ограниченной отвественностью</span>
             </div>
+          
         </div>
         <div class="header-slider">
-            
+            <button class="sliderRow leftRow">Left</button>
             <!-- img src="img/ext/icon_srv_15.png" /-->
-            <figure>
+            <figure class="sliderImg sliderImg__active">
                 <!--img src="img/ext/gal1.png" alt=""-->
-                <figcaption></figcaption>
+                <figcaption>Финансовый консалтинг</figcaption>
             </figure>
-            <figure>
+            <figure class="sliderImg">
                 <!--img src="img/ext/gal2.png" alt=""-->
                 <figcaption></figcaption>
             </figure>
-            <figure>
+            <figure class="sliderImg">
                 <!--img src="img/ext/gal3.png" alt=""-->
                 <figcaption></figcaption>
             </figure>
-            <figure>
+            <figure class="sliderImg">
                 <!--!--img src="img/ext/gal4.png" alt=""-- height="140px"-->
                 <figcaption></figcaption>
             </figure>
-            <figure>
+            <figure class="sliderImg">
                 <!--img src="img/ext/gal5.png" alt=""-->
                 <figcaption></figcaption>
             </figure>
+            <button class="sliderRow rightRow">Right</button>
+            
         </div>
     </div>
 
@@ -219,18 +222,21 @@
         });
     </script>
 
-<script>
-      $(document).ready(function () {
-            var base_url = 'url("img/ext/gal';
-            var i;
-            for (i = 0; i < 5; i++) {
-                var css_image = base_url + (i+1).toString() + '.png") no-repeat 0px 0px';
-                console.log(css_image)
-                $("figure").eq(i).css({"background": css_image });
-            }
-         
-       });
-</script>
+    <script>
+        $(document).ready(function () {
+                var base_url = 'url("img/ext/gal';
+                var i;
+                for (i = 0; i < 5; i++) {
+                    var css_image = base_url + (i+1).toString() + '.png") no-repeat';
+                    
+                    $("figure").eq(i).css({"background": css_image });
+                }
+            
+        });
+    </script>
+    <script src="script/main.js"></script>
+
+
 
 </body>
 </html>

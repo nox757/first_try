@@ -161,10 +161,24 @@ body {
     justify-content: center;
 }
 
-.header-slider figure{
+.header-slider figure.sliderImg{
     min-width: 125px;
-    background-repeat: no-repeat;
+    max-width: 125px;
     max-height: 125px;
+    background-position-y: 0px !important;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+   
+}
+
+.header-slider figure.sliderImg__active {
+    background-position-y: -150px !important;
+}
+.header-slider figure.sliderImg figcaption{
+    font-size: 2.0rem;
    
 }
 
