@@ -14,6 +14,11 @@ body {
     padding: 0;
 }
 
+.header *, .main, .contacts *, .footer * {
+    max-width: 1200px;
+}
+
+
 .header {
     height: 73rem;
     min-height: 73rem;
@@ -35,7 +40,7 @@ body {
 
 .m-menu-link {
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: #fff;
     display: none;
 }
@@ -158,9 +163,24 @@ body {
     background: green;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    font-weight: 600; 
+    width: 80%;
+}
+.header-slider a.button {
+    display: inline-block;
+    background: none;
+    color: white;
+    font-size: 15rem;
+    line-height: 100px; 
+    
+    align-self: flex-start;
+    
 }
 
+.header-slider a.button:hover {
+    color: #e5e5e5;
+}
 .header-slider figure.sliderImg{
     min-width: 125px;
     max-width: 125px;
@@ -170,7 +190,8 @@ body {
     padding: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    /*justify-content: flex-end;
+    padding-top: 165px;*/
    
 }
 
@@ -178,7 +199,10 @@ body {
     background-position-y: -150px !important;
 }
 .header-slider figure.sliderImg figcaption{
-    font-size: 2.0rem;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 130px;
+    
    
 }
 
