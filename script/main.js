@@ -4,10 +4,10 @@ var sliderButtons = document.querySelectorAll(".button.arrow");
 
 
 var w = document.documentElement.clientWidth || document.body.clientWidth;
-var countShowImg = Math.floor((w - 155) / 125); 
+var MAX_SHOW_IMG = Math.floor((w - 155) / 125); 
 var currIndexImg = 0;
-console.log(w, countShowImg, sliderImages[0].style.display);
-for(var i = lenSlider-1; i >= countShowImg; i-- ) {
+console.log(w, MAX_SHOW_IMG, sliderImages[0].style.display);
+for(var i = lenSlider-1; i >= MAX_SHOW_IMG; i-- ) {
     sliderImages[i].style.display = "none";
 }
 
@@ -37,18 +37,61 @@ function changePositionArrow(direction) {
     currentSliderImage.classList.remove("sliderImg__active");
 }
 ///////////////////*/
-function changePositionArrow2(direction) {
+function showImg(from, to) {
+    for (var i = 0; i < lenSlider; i++){
+        if (i >= from && i <=to){
+            sliderImages[i].style.display = "flex";
+        } else {
+            sliderImages[i].style.display = "none";
+        }
+        
+    }
+}
+
+function changePositionArrow(direction) {
     var prevIndexImg = (currIndexImg - 1 < 0) ? lenSlider-1 : currIndexImg - 1;
     var nextIndexImg = (currIndexImg+1) % lenSlider;
     sliderImages[currIndexImg].classList.remove("sliderImg__active");
+    var from = 0, to = lenSlider; 
+    var flag = false;
+    
     if (direction == "left") {       
             sliderImages[prevIndexImg].classList.add("sliderImg__active"); 
             currIndexImg = prevIndexImg;
 
     } else {
+        if(MAX_SHOW_IMG < lenSlider) {
+            if ((currIndexImg+1) % MAX_SHOW_IMG == 0) {
+                from = currIndexImg + 1;
+                to = currIndexImg+MAX_SHOW_IMG;
+                flag = true;
+            
+            //current image don't last 
+                if(currIndexImg + MAX_SHOW_IMG >= lenSlider) {
+                    from = currIndexImg;
+                    to = lenSlider-1;
+                    //flag = true;
+               
+                }
+            }
+            
+            //current image is last
+            if (nextIndexImg == 0) {
+                from = 0;
+                to = MAX_SHOW_IMG-1;
+                flag = true;
+            }  
+            if (flag) {
+                showImg(from, to);
+            }
+        }          
+            
+        
         sliderImages[nextIndexImg ].classList.add("sliderImg__active"); 
         currIndexImg = nextIndexImg;
+
     }
+    
     
     
 }
@@ -67,12 +110,12 @@ for (i = 0, len = sliderImages.length; i < len; i++) {
 
 //left arrow on slider event
 sliderButtons[0].addEventListener('click', function(){
-        changePositionArrow2("left");
+        changePositionArrow("left");
     });
 
 //right arrow on slider event
 sliderButtons[1].addEventListener('click', function(){
-    changePositionArrow2("right");
+    changePositionArrow("right");
 });
 
 
