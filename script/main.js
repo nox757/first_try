@@ -6,7 +6,7 @@ var sliderButtons = document.querySelectorAll(".button.arrow");
 var w = document.documentElement.clientWidth || document.body.clientWidth;
 var MAX_SHOW_IMG = Math.floor((w - 155) / 125); 
 var currIndexImg = 0;
-console.log(w, MAX_SHOW_IMG, sliderImages[0].style.display);
+//console.log(w, MAX_SHOW_IMG, sliderImages[0].style.display);
 for(var i = lenSlider-1; i >= MAX_SHOW_IMG; i-- ) {
     sliderImages[i].style.display = "none";
 }
@@ -19,24 +19,7 @@ function changePosition(el, index) {
     el.classList.add("sliderImg__active");
     currIndexImg = index;
 }
-/*
-function changePositionArrow(direction) {
-    var currentSliderImage = document.querySelector(".sliderImg__active");
-    var prevImage = currentSliderImage.previousElementSibling;
-    var nextImage = currentSliderImage.nextElementSibling;
-    if (direction == "left") {
-        if (prevImage != null && prevImage.nodeName != "A") {
-            prevImage.classList.add("sliderImg__active"); 
-         } else {
-              sliderImages[sliderImages.length - 1].classList.add("sliderImg__active");
 
-         }
-    } else {
-        (nextImage != null && nextImage.nodeName != "A") ? nextImage.classList.add("sliderImg__active") : sliderImages[0].classList.add("sliderImg__active");
-    }
-    currentSliderImage.classList.remove("sliderImg__active");
-}
-///////////////////*/
 function showImg(from, to) {
     for (var i = 0; i < lenSlider; i++){
         if (i >= from && i <=to){
@@ -55,21 +38,47 @@ function changePositionArrow(direction) {
     var from = 0, to = lenSlider; 
     var flag = false;
     
-    if (direction == "left") {       
+    if (direction == "left") {  
+            if(MAX_SHOW_IMG < lenSlider) {
+            if ((lenSlider - currIndexImg) % MAX_SHOW_IMG == 0) {
+                from = currIndexImg - MAX_SHOW_IMG;
+                to = currIndexImg - 1;
+                flag = true;
+            
+            //current image don't last 
+                if(currIndexImg - MAX_SHOW_IMG <= 0) {
+                    from = 0;
+                    to = MAX_SHOW_IMG-1;
+                    //flag = true;
+               
+                }
+            }
+            
+            //current image is last
+            if (prevIndexImg == lenSlider-1) {
+                from = lenSlider - MAX_SHOW_IMG;
+                to = lenSlider - 1;
+                flag = true;
+            }  
+            if (flag) {
+                showImg(from, to);
+                flag = false;
+            }
+        }            
             sliderImages[prevIndexImg].classList.add("sliderImg__active"); 
             currIndexImg = prevIndexImg;
 
     } else {
         if(MAX_SHOW_IMG < lenSlider) {
-            if ((currIndexImg+1) % MAX_SHOW_IMG == 0) {
+            if ((currIndexImg + 1) % MAX_SHOW_IMG == 0) {
                 from = currIndexImg + 1;
-                to = currIndexImg+MAX_SHOW_IMG;
+                to = currIndexImg + MAX_SHOW_IMG;
                 flag = true;
             
             //current image don't last 
                 if(currIndexImg + MAX_SHOW_IMG >= lenSlider) {
-                    from = currIndexImg;
-                    to = lenSlider-1;
+                    from = lenSlider - MAX_SHOW_IMG;
+                    to = lenSlider - 1;
                     //flag = true;
                
                 }
@@ -78,11 +87,12 @@ function changePositionArrow(direction) {
             //current image is last
             if (nextIndexImg == 0) {
                 from = 0;
-                to = MAX_SHOW_IMG-1;
+                to = MAX_SHOW_IMG - 1;
                 flag = true;
             }  
             if (flag) {
                 showImg(from, to);
+                flag = false;
             }
         }          
             

@@ -160,7 +160,7 @@ body {
 .header-slider {
     min-height: 200px;
     margin-bottom: 30px; 
-    background: green;
+    /*background: green;*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
